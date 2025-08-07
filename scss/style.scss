@@ -1,0 +1,145 @@
+@import "mixins";
+@import "variables";
+
+.analytics {
+  text-align: center;
+  padding: 60px 20px;
+
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+
+  &__subtitle {
+    font-size: 18px;
+    color: #667085;
+    margin-bottom: 30px;
+
+    @include  tablet {
+      font-size: 16px;
+    }
+
+    @include  mobile {
+      font-size: 14px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 40px;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn {
+      padding: 16px 28px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 16px;
+      border: none;
+
+      &--white {
+        background: transparent;
+        border: 1px solid #d0d5dd;
+        color: #344054;
+      }
+
+      &--purple {
+        background: #7f56d9;
+        color: #ffffff;
+      }
+    }
+  }
+
+  &__image {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+.metrics {
+padding: 80px 20px;
+  text-align: center;
+
+  &__title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+    @include tablet {
+     font-size: 28px;
+    }
+
+    @include mobile {
+      font-size: 22px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    color: #667085;
+    margin-bottom: 32px;
+
+    @include mobile {
+      font-size: 16px;
+    }
+
+    @include tablet {
+      font-size: 14px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 40px;
+
+    .btn {
+      padding: 16px 28px;
+      font-size: 16px;
+      border-radius: 8px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+
+      &--white {
+        background-color: transparent;
+        border: 1px solid #d0d5dd;
+        color: #344054;
+      }
+
+      &--purple {
+        background-color:  #7f56d9;
+        color: white;
+      }
+    }
+
+    @include mobile {
+      align-items: center;
+    }
+  }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
